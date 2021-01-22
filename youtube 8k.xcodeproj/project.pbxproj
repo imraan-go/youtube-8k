@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,8 +16,9 @@
 		1958F037259AB56800A2AAF2 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1958F036259AB56800A2AAF2 /* SafariExtensionHandler.swift */; };
 		1958F039259AB56800A2AAF2 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1958F038259AB56800A2AAF2 /* SafariExtensionViewController.swift */; };
 		1958F03C259AB56800A2AAF2 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 1958F03B259AB56800A2AAF2 /* script.js */; };
-		1958F03E259AB56800A2AAF2 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1958F03D259AB56800A2AAF2 /* ToolbarItemIcon.pdf */; };
 		1958F041259AB56800A2AAF2 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1958F03F259AB56800A2AAF2 /* SafariExtensionViewController.xib */; };
+		196FCE8525BB7AC600E2050A /* inject.js in Resources */ = {isa = PBXBuildFile; fileRef = 196FCE8425BB7AC600E2050A /* inject.js */; };
+		196FCE9525BB7D5200E2050A /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 196FCE9425BB7D5200E2050A /* Logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +58,11 @@
 		1958F036259AB56800A2AAF2 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
 		1958F038259AB56800A2AAF2 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
 		1958F03B259AB56800A2AAF2 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
-		1958F03D259AB56800A2AAF2 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		1958F040259AB56800A2AAF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		1958F042259AB56800A2AAF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1958F043259AB56800A2AAF2 /* youtube_8k_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = youtube_8k_Extension.entitlements; sourceTree = "<group>"; };
+		196FCE8425BB7AC600E2050A /* inject.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = inject.js; sourceTree = "<group>"; };
+		196FCE9425BB7D5200E2050A /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				1958F03B259AB56800A2AAF2 /* script.js */,
-				1958F03D259AB56800A2AAF2 /* ToolbarItemIcon.pdf */,
+				196FCE9425BB7D5200E2050A /* Logo.png */,
+				196FCE8425BB7AC600E2050A /* inject.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -201,7 +204,7 @@
 				};
 			};
 			buildConfigurationList = 1958F017259AB56800A2AAF2 /* Build configuration list for PBXProject "youtube 8k" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -233,9 +236,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				196FCE9525BB7D5200E2050A /* Logo.png in Resources */,
 				1958F041259AB56800A2AAF2 /* SafariExtensionViewController.xib in Resources */,
-				1958F03E259AB56800A2AAF2 /* ToolbarItemIcon.pdf in Resources */,
 				1958F03C259AB56800A2AAF2 /* script.js in Resources */,
+				196FCE8525BB7AC600E2050A /* inject.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +459,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.imraan-go.youtube-8k";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -476,7 +480,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.imraan-go.youtube-8k";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

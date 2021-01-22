@@ -26,8 +26,11 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
         validationHandler(true, "")
     }
     
+    
     override func popoverViewController() -> SFSafariExtensionViewController {
+        NSLog("popupview showed!")
         return SafariExtensionViewController.shared
     }
+ 
 
 }
