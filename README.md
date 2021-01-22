@@ -1,4 +1,4 @@
-# youtube-8k
+# Youtube 8K on Safari
 Watch Youtube Videos in highest quality automatically on Safari 14!
 
 Minimum requirements:
